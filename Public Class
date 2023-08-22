@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class Car{
+	public :
+		int Engine_No,car_Number,torque,horse_power;
+		string Car_Name;
+		Car(int EnNO,int NO,int TO,int HR,string Name)
+		{
+			Engine_No = EnNO;
+			car_Number = NO;
+			torque = TO;
+			horse_power  = HR;
+			Car_Name = Name;
+		}
+		void display()
+			{
+	cout << Engine_No << endl <<  car_Number <<endl << torque <<endl << horse_power << endl <<Car_Name;
+		}
+};
+int main()
+{
+	Car user1(254,5897,145,45,"SHIFT");
+	user1.display();
+}
+
+
